@@ -315,6 +315,7 @@ A set of operators is necessary to manipulate the state of a qubit in a certain 
 The operations on one or more qubits are called gates. They have two different parameters that matter for quantum computing:
                 
 a. Their 'quality', also called fidelity: how accurate is the result of the operation. The closer to 100% the less errors our algorithm gets and the less correction is required
+
 b. Their speed: the time the operation takes matters in the duration of the overall algorithm. This is also an important parameter when we think about the stability of a qubit.
 
 The underlying properties can be achieved in many different ways and I want to quickly introduce the most common ones and give a quick overview of their current properties and challenges.
