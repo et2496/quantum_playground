@@ -10,7 +10,7 @@ def render_gan_intro():
     The discriminator on the other hand tries to distinguish between the real data and the fake data from the generator.
     The generator and the discriminator get optimized to fake better data and accurately distinguish between the two data sets.
     In finance for example, many use cases depend on Monte-Carlo simulations that simulate the evolution of a given system. 
-    This simulation takes a lot of samples to minimize its errors and, hence, takes a long time to evolve.
+    This simulation takes a lot of samples to minimize its errors and, therefore, takes a long time to evolve.
     
                     
     ### Classical Limits
@@ -20,11 +20,11 @@ def render_gan_intro():
     There are several classical attempts to improve the performance for different use cases and goals.
     
             
-    ### Quantum Part
+    ### Quantum Element
     Quantum Generative Adversarial Networks are the quantum alternative to classical GANs, where one or both parts can be performed on a quantum device.
-    Especially changing the generator to a quantum generator seems to have an impact on the overall performance.
+    Specifically, changing the generator to a quantum generator seems to have an impact on the overall performance.
     Many use cases require a probability distribution. Fortunately, this can be represented by a quantum state of a quantum computer.
-    The loading of this probability distribution only scales polynomial compared to the exponential scaling in the classical solution (see VQE).
+    The loading of this probability distribution only scales polynomial compared to the exponential scaling in the classical solution (see VQE example).
     In this case, quantum solutions could offer a quadratic speed-up. 
     QGANs are again a hybrid solution that uses classical learning algorithms with a quantum state that evolves.
     

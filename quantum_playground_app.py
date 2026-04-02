@@ -30,20 +30,19 @@ if page == "Introduction":
         This project is my exploration of practical industry use cases for quantum computing. 
         As we've all heard before quantum computing (QC) has the potential to impact almost every industry. 
         However, understanding how your company specifically is affected is less clear.
-        I want to help make a more educated decision on what to look into for your industry sector and what algorithms might have an impact in the future.
-        To do so, I delevoped the quantum playground, where I show what I have learned in the last couple of days and make it more tangible by adding small games to each section.
+        My aim is to help tailor quantum computing to your companies individual needs.
+        In order to achieve this, I delevoped the "Qantum Playground", where I have displayed what I have learned in the last couple of days and make it more enganging by adding small games to each section.
         Before we start, I want to mention that right now QC is still in an exploration stage. 
-        We are still learning about algorithms and how to improve implementation and hardware.
-        Eventhough, we might not be at a stage where QC can compete with classical hardware, there are still key reasons to already prepare for QC:
-        1. There are fast improvements in all areas of QC and it is important to be aware of that
+        Algorithms are still being developed and implementation and hardware are constantly evolving.
+        Although, we are not at a stage where QC can compete with classical hardware, there are still key aspects of QC that should be considered:
+        1. It is important to know that the quantum landscape is constantly evolving
         2. Once everything is ready, it is important to already be confident using it and having some experience in the company
-        3. Especially in the beginning quite rare talent is required, the earlier a company acquires these talents or builds up skills, the better.
+        3. Especially in the beginning rare talent is required, the earlier a company acquires these talents or builds up skills, the better.
         
-        Additionally, it is important to note that quantum advantage could take on a variety of different shapes, including: fewer required samples, a better solution quality, higher accuracy in simulation, maybe even a solution to problems that can't be solven yet, or - and thats something fundamentally different - a better energy efficiency.
-        None of that these advantages have been proven yet, but there are signs that we are on the right track.
+        Additionally, it is important to note that quantum advantage could take on a variety of different shapes, including: fewer required samples, a better solution quality, higher accuracy in simulation, maybe even a solution to problems that have not yet been solved, or - and thats something fundamentally different - a better energy efficiency.
+        None of these advantages have been proven yet, but there are signs that we are on the right track.
         
-        Now let's turn to the use cases, 
-        Beginning with different industries. I have identified six areas where QC can play a role:
+        Now let's turn to the use cases, beginning with different industries. I have identified six areas where QC can play a role:
         1. Finance
         2. Logistics
         3. Healthcare
@@ -51,24 +50,24 @@ if page == "Introduction":
         5. Cryptoanalysis
         6. Research
 
-        For each area, Key use cases have been identified although it is by no means a comprehensive list. The use cases are as follows:
+        For each area, key use cases have been identified although it is by no means a comprehensive list. The use cases are as follows:
     """)
     st.image("pic1.jpg", caption="Impacted areas with use cases")
     st.markdown("""
-        Now, an important insight is that we do not need a completely new approach for every individual use case. Instead, a small number of core algorithms and models can be applied across many scenarios.
-        In this project, three key algorithms are explored further, as they consistently appear across the majority of use cases in this domain. Together, they cover the three main computational areas: optimization, simulation, and machine learning:
+        One important insight is that we do not need a completely new approach for every individual use case. Instead, a small number of core algorithms and models can be applied across many scenarios.
+        In this project, three key algorithms are explored further, as they consistently appear across the majority of use cases. Together, they cover the three main computational areas: optimization, simulation, and machine learning:
         1. Variational Quantum Eigensolver (VQE)
         2. Quantum Approximate Optimization Algorithm (QAOA)
         3. Quantum Generative Adversarial Networks (QGANs)
     """)
     st.image("pic2.jpg", caption="Underlying algorithms")
     st.markdown("""               
-        As a starting point, let me say that everything that can be described as a Hamiltonian is a good start for QC. 
-        These kind of problems are quite natural for a quantum device and, therefore, show a lot of potential for a advantage.
+        As a starting point everything that can be described as a Hamiltonian is a good start for QC. 
+        These kind of problems are natural for a quantum device and, therefore, show a lot of potential for an advantage.
         Due to a lot of other challenges and, frankly, very good classical algorithms, the goal is not to show advantage over the classical solution, but to show future potential of quantum solutions.
 
         These algorithms will be explored in more detail in the following pages. Afterwards, I will examine how different hardware architectures influence our solutions, and whether certain architectures are better suited for specific use cases.
-        At the end of each page, we want to play a small game to check if we understood the section, so let's get into it!
+        At the end of each page, there is a small game to check if you understood the section. Let's get into it!
     """)
 
 elif page == "Variational Quantum Eigensolver":
@@ -122,15 +121,15 @@ elif page == "Variational Quantum Eigensolver":
 
     st.markdown("""
     ### Summary
-    We can see that shifting from a classical to a hybrid algorithm, our dependencies of the computational cost changes. It can be seen that with the hybrid algorithm, we can save some complexity and, hence, computational cost.
+    From this, it can be seen that by shifting from a classical to a hybrid algorithm, the dependencies of the computational cost change. With the hybrid algorithm, complexity can be reduced and, therefore, computational cost.
     This could lead to a more efficient or more accurate solution in the future.
     These problems are interesting for industries as well, because often a small time or quality improvement can have a large impact on the business outcome.
-    Especially in the fields of drug or new material discovery this could improve the understanding of the materials behaviour.
+    Especially in the fields of drug or new material discovery this could improve the understanding of the material's behaviour.
     In this example, classical solutions can be done exact, which does not work for larger problems.
     The comparison of a classical variational algorithm with the VQE would be of interest for larger molecules.
-    It can be seen, that the solution could become faster, but it depends largely on the initial state and problem formulation.
+    The solution could become faster, but it depends largely on the initial state and problem formulation.
     Additionally, there are a lot of other computational costs that need to be taken into account.
-    Nonetheless, we have seen our algorithm works and comes closer to the ground state.
+    Nonetheless, the algorithm works and comes closer to the ground state.
     """)
 
 elif page == "Quantum Approximate Optimization Algorithm":
@@ -235,7 +234,7 @@ elif page == "Quantum Approximate Optimization Algorithm":
     st.markdown("""
     ### Summary
     We can see in this example, it is possible to find a solution with our quantum hybrid method.
-    Just as before, the system size is so small that we can have a classical exact solution. 
+    As mentioned before, the system size is so small that we can have a classical exact solution. 
     As shown in the scaling behaviour approximate solutions are required for larger problems.
     To make a quantum advantage consideration, the comparison to a classical approximate solution would be required.
     Currently, the computational overhead for the quantum solution would likely overcome the potential benefit.
@@ -310,12 +309,14 @@ elif page == "Hardware Arena":
 
     st.markdown("""
 ### Hardware Approaches
-Quantum Computing means using quantum mechanical phenomenons to do computational tasks.
+Quantum Computing involves using quantum mechanical phenomenons to perform computational tasks.
 For that something that can work like a qubit is required. This means a quantum system must have two states that can manipulated.
-A set of operators is necessary to manipulate the state of this qubit in a certain way, so computational operations can be performed.
-The operations on one or more qubits is called gates. They have essentially two different parameters that matter for quantum computing:
+A set of operators is necessary to manipulate the state of a qubit in a certain way, so computational operations can be performed.
+The operations on one or more qubits are called gates. They have two different parameters that matter for quantum computing:
+                
 a. Their 'quality', also called fidelity: how accurate is the result of the operation. The closer to 100% the less errors our algorithm gets and the less correction is required
-b. Their speed: the time the operation actually matters in the duration of the overall algorithm. This is also an important parameter when we think about the stability of a qubit.
+b. Their speed: the time the operation takes matters in the duration of the overall algorithm. This is also an important parameter when we think about the stability of a qubit.
+
 The underlying properties can be achieved in many different ways and I want to quickly introduce the most common ones and give a quick overview of their current properties and challenges.
 The architectures are:
 1. Ion Traps
@@ -389,10 +390,10 @@ This leads to ions that can be manipulated by lasers or microwaves.
 With this technique the qubits are very stable and, due to the fact they can be moved, all-to-all connected.
 The gate fidelity is very high compared to other architectures with a leading 99.99% two-qubit fidelity achieved by IonQ.
 The overall speed of the gates is low. 
-Additionall, the shutteling, the movement to a spot where the qubits can be manipulated has to be very slow because otherwise the ions would be heated and, hence disturbed.
-Due to this as well as other variables the overall speed of computations in this architecture.
+Additionally, the shutteling, the movement to a spot where the qubits can be manipulated has to be very slow to prevent the ions from being heated and, therefore, disturbed.
+Due to this as well as other variables the overall speed of computations in this architecture is slow.
 The current challenge of ion trap quantum computers is the overall scaling. 
-Bringing all required elements in a easily scalable and interactive way has not yet been solved.
+Bringing all required elements in an easily scalable and interactive way has not yet been solved.
 
 ### Neutral Atoms
 Neutral atom quantum computers are similar to ion traps and use neutral atoms that are trapped and manipulated to act like a qubit.
@@ -404,21 +405,21 @@ A well known startup working on neutral atom quantum computing is planqc, based 
 Superconducting qubits are realized by small electrical circuits that are cooled to near absolute zero. 
 At this temperature they behave quantum mechanically and realize qubits.
 The gates are implemented by microwave pulses that control the current.
-This architecture leads to very fast gate operations and can use well-developed technology. Currently these systems have the largest amount of qubits thus far.
-The fidelity and the coherence time is low compared to other architectures. These qubits are not all-to-all connected.
+This architecture leads to very fast gate operations and can use well-developed technology. Currently these systems have the largest amount of qubits.
+The fidelity and the coherence time is low compared to other architectures. The qubits are not all-to-all connected.
 The scalling seems to become more and more difficult due to the cryogenic challenges.
                 
 ### NV Centers
 NV center quantum computing works with defects in a diamond.
 Each NV center can contain many qubits. 
 For an efficent scaling, a connection between an array of NV centers is required.
-There are a few companies trying to build NV center QC that operate at room temperature and are, therefore, very adaptable and good for a few specific use cases.
-There are a few challenges especially with the scaling of these systems.
-NV centers need to be in a specific distance and with a certain direction. This is hard to manufacture and until then is not scalable because it is an almost arbitrary process.
+There are a few companies trying to build NV center QC that operate at room temperature and are, therefore, very adaptable and applicable for a few specific use cases.
+Challenges surrounding the scaling of the system still persist.
+NV centers need to be in a specific distance and with a certain direction. And until it can be done it is not scalable because it is an almost arbitrary process.
 However, the architecture shows a lot of potential for quantum sensing.
                 
 ### Photonic
-Photonic QC are quite unique compared to the other architectures. 
+Photonic QC are unique compared to the other architectures. 
 In this architecture light and photons are used as qubits and the computational tasks are performed by beam splitters and interferometers.
 This architecture can be performed at room temperature and is well fitted for communication and networking use cases.
 The current challenges lie in the photon loss combined with single photon detection and creation. 
@@ -434,7 +435,7 @@ Eventhough they can make use of the existing chip manifacturing, precise control
 Topological qubits are arguably the most unique QC architecture.
 As it is not proven to even work as a qubit, the details are are not part of this section.
 However it is improtant to note, because Microsoft claimed a working topological qubit, which was not well received by the community.
-If topological qubit work, the scaling would be easy and is therefore, still a competitor in the quantum race.
+If topological qubits work, the scaling would be easy and is therefore, still a competitor in the quantum race.
 
 """)    
 
@@ -447,12 +448,14 @@ If topological qubit work, the scaling would be easy and is therefore, still a c
     Let's finish this section with a game as well.
     We want to see how well a quantum algorithm would work on a current architecture.
     Each architecture has its individual:
+             
     - gate fidelity
     - speed
     - scalability
              
     We want to see which kind of algorithm would run well on which hardware.
     For that, we can choose one of the above hardware architectures (except topological) and define our algorithm by:
+             
     1. Number of qubits: how many qubits do we need in our algorithm?
     2. Circuit depth: how deep is our algorithm, how many gates do we apply?
     
@@ -539,16 +542,14 @@ elif page == "Conclusion":
     st.title("Conclusion")
 
     st.markdown("""
-    
-    I have built this app attempt to bridge the gap between people with a quantum background and business professionals trying to understand algorithms. 
-    This is a topic I personally have been working on with both a quantum and business background. 
-    With use of small interactive problems, I wanted to showcase three algorithms that can play a huge role in the future of quantum computing.
-    Of course there are many more use cases and many variations of the algorithms we have explored here and much more to learn but there is also a lot of material online to do so, and just as the hardware is evolving software development is evolving, too.
+    I have built this app as an attempt to bridge the gap between professionals with a quantum background and business professionals trying to understand algorithms. 
+    This is a topic I personally have overcome having both a quantum and business background. 
+    With the use of small interactive problems, I wanted to showcase three algorithms that can play a huge role in the future of quantum computing.
+    Of course there are many more use cases and many variations of the algorithms we have explored here and much more to learn. Addtitionally, as the hardware is evolving so too is software development.
     There are many companies and products already on the market that simplify working on these use cases, where the user/developer requires less quantum knowledge.
-    One company working on this is classiq. Additionally, the framework qrisp provides easy to use algorithm parts.
     My goal was to show that it is possible to go into detail without negating a business element (and while trying to have fun).
     I believe there is still a large gap between interested businesses and quantum computing due to a lack of understanding.
-    It was my hope that this fun interactive approach allows a wider audience to better grasp the question "What is Quantum Computing" without comprehensively covering all aspects of QC.
+    It is my hope that this fun interactive approach allows a wider audience to better grasp the question "What is Quantum Computing" without comprehensively covering all aspects of QC.
     In the future, I would love to integrate real world hardware into my quantum playground and see how available NISQ devices perform, where the overhead comes from, and when an advantage can be seen.
     Lastly, I would like to incorporate more use cases and dive even further into a variety of interesting topics with more detailed coding.
     """)
